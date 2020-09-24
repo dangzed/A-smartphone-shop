@@ -41,7 +41,7 @@
 		die;
 	}
 
-	$sql = "insert into product values ('$id','$image','$name',$price)";
+	$sql = "insert into product values ('$id','$name','$image',$price)";
 	  mysqli_query($conn, $sql);
 	  move_uploaded_file($_FILES['image']['tmp_name'], $target);
 
